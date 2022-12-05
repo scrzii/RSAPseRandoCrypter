@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>..\..\build\$(MSBuildProjectName)\bin</BaseOutputPath>
+    <BaseIntermediateOutputPath>..\..\build\$(MSBuildProjectName)\obj</BaseIntermediateOutputPath>
+    <Platforms>AnyCPU;x86</Platforms>
+	<EnablePreviewFeatures>true</EnablePreviewFeatures>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RSAPseRandoCrypter">
+      <HintPath>..\..\build\RSAPseRandoCrypter\bin\Debug\net6.0\RSAPseRandoCrypter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
