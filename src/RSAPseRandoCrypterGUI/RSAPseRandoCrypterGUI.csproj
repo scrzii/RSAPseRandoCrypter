@@ -7,6 +7,9 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
 	<EnablePreviewFeatures>true</EnablePreviewFeatures>
+	<BaseOutputPath>..\..\build\$(MSBuildProjectName)\bin</BaseOutputPath>
+	<BaseIntermediateOutputPath>..\..\build\$(MSBuildProjectName)\obj</BaseIntermediateOutputPath>
+	<IntermediateOutputPath>..\..\build\$(MSBuildProjectName)\obj</IntermediateOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
