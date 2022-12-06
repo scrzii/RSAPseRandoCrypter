@@ -11,4 +11,8 @@
 	<EnablePreviewFeatures>true</EnablePreviewFeatures>
   </PropertyGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /Y &quot;..\..\build\$(MSBuildProjectName)\bin\Debug\net6.0\$(MSBuildProjectName).dll&quot; &quot;..\..\lib&quot;" />
+  </Target>
+
 </Project>

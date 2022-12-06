@@ -13,7 +13,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RSAPseRandoCrypter\RSAPseRandoCrypter.csproj" />
+    <Reference Include="RSAPseRandoCrypter">
+      <HintPath>..\..\lib\RSAPseRandoCrypter.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

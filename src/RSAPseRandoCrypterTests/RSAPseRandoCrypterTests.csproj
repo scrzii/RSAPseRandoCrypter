@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <Reference Include="RSAPseRandoCrypter">
-      <HintPath>..\..\build\RSAPseRandoCrypter\bin\Debug\net6.0\RSAPseRandoCrypter.dll</HintPath>
+      <HintPath>..\..\lib\RSAPseRandoCrypter.dll</HintPath>
     </Reference>
   </ItemGroup>
 
