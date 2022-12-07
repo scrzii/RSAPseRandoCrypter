@@ -10,4 +10,6 @@ Using:
 You will get ecnrypted string, which you also can send publicly.
 3. Decryption: call Decrypt method with secret key (generated at point 1) and encrypted message. Your will get an original message.
 
-All string data is stored in hexadecimal byte format
+All string data is stored in hexadecimal byte format.
+
+If you use .dll reference add &lt;EnablePreviewFeatures&gt;true&lt;/EnablePreviewFeatures&gt; to .csproj file.
