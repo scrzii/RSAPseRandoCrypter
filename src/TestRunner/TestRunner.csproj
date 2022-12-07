@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <Reference Include="RSAPseRandoCrypter">
-      <HintPath>..\..\lib\RSAPseRandoCrypter.dll</HintPath>
+      <HintPath>..\..\build\lib\RSAPseRandoCrypter.dll</HintPath>
     </Reference>
   </ItemGroup>
 

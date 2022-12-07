@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /Y &quot;..\..\build\$(MSBuildProjectName)\bin\Debug\net6.0\$(MSBuildProjectName).dll&quot; &quot;..\..\lib&quot;" />
+    <Exec Command="set outputDir=&quot;..\..\build\lib\&quot;&#xD;&#xA;if not exist %25outputDir%25 mkdir %25outputDir%25&#xD;&#xA;xcopy /Y &quot;$(TargetPath)&quot; %25outputDir%25" />
   </Target>
 
 </Project>

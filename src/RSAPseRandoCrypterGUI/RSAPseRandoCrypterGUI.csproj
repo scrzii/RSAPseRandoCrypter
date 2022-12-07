@@ -14,8 +14,12 @@
 
   <ItemGroup>
     <Reference Include="RSAPseRandoCrypter">
-      <HintPath>..\..\lib\RSAPseRandoCrypter.dll</HintPath>
+      <HintPath>..\..\build\lib\RSAPseRandoCrypter.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="set filePath=&quot;.\$(MSBuildProjectName)\bin\$(Configuration)\$(TargetFramework)&quot;&#xD;&#xA;echo start /d %25filePath%25 $(TargetName).exe &gt; &quot;..\..\build\run GUI.bat&quot;" />
+  </Target>
 
 </Project>
